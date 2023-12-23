@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="{{asset('style.css')}}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
 <style>
@@ -36,9 +37,16 @@
                 <!-- Utilisez le body comme élément de capture -->
                 <img class="file-upload-image" id="screenshot" src="#" alt="your image" />
               <div class="image-title-wrap">
-                <button type="button" onclick="removeUpload()" class="remove-image"><i class="fa-solid fa-trash"></i></button>
-                <button type="button"  class="download-image" onclick="downloadImage()"><i class="fa-solid fa-download"></i></button>
-                <button class="share-image" id="shareButton"><i class="fa-solid fa-share-nodes"></i></button>
+                <button type="button" onclick="removeUpload()" class="remove-image"><span class="material-symbols-outlined">
+                    delete
+                    </span></button>
+                <button type="button"  class="download-image" onclick="downloadImage()">
+                    <span class="material-symbols-outlined">
+                        download
+                        </span></button>
+                <button class="share-image" id="shareButton"><span class="material-symbols-outlined">
+                    share
+                    </span></button>
               </div>
             </div>
           </div>

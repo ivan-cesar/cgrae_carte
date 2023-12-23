@@ -208,20 +208,23 @@ transition: all .2s ease;
     display: block;
   }
   @media(max-width: 600px) {
+    .material-symbols-outlined {
+      font-size: 16px!important;
+    }
       .image-title-wrap{
           display: flex;
             position: absolute;
-            top: 100%;
-            left: 11.5%;
+            top: 102%;
+            left: 4.5%;
       }
      .file-upload {
-    width: 162px;
-    margin: 0 auto;
-    padding: 20px;
-    position: absolute;
-    top: 12.8%;
-    left: 7%;
-    height: 214px;
+      width: 136px!important;
+      margin: 0 auto;
+      padding: 7px!important;
+      position: absolute;
+      top: 8.8%!important;
+      left: 7%!important;
+      height: 185px!important;
   }
       h3 {
         font-size: 9px!important;
@@ -234,14 +237,49 @@ transition: all .2s ease;
         height: 100%;
       }
  .file-upload-image {
-    margin: auto;
-    padding: 20px;
-    width: 161px;
-    height: 226px;
-    position: absolute;
-    left: 1%;
-    top: -5.2%;
+  margin: auto;
+  padding: 3px;
+  width: 125px;
+  height: 178px;
+  position: absolute;
+  left: 4%;
+  top: 1.8%;
   }
      .remove-image,.download-image,.share-image {
       width: 35px;}
+}
+
+@media(min-width: 1440px) {
+  .file-upload {
+    width: 442px;
+    margin: 0 auto;
+    padding: 0px;
+    position: absolute;
+    top: 31%;
+    left: 9.8%;
+    height: 637px;
+}
+}
+@media(min-width: 1440px) {
+.file-upload {
+  width: 619px;
+  margin: 0 auto;
+  padding: 20px;
+  position: absolute;
+  top: 39%;
+  left: 7.8%;
+  height: 898px;
+}
+}
+@media (max-width:768px) {
+  
+  .file-upload {
+    width: 277px;
+    margin: 0 auto;
+    padding: 20px;
+    position: absolute;
+    top: 11%;
+    left: 5.8%;
+    height: 389px;
+}
 }
